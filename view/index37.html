@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap4 35</title>
+    <link rel="stylesheet" href="../css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/customCss.css">
+</head>
+<body>
+    <div class="container mb-5">
+        <button type="button" class="btn btn-secondary" data-toggle="tooltip"
+        data-placement="top" title="Tooltip On Top">
+            Top
+        </button>
+        <button type="button" class="btn btn-secondary" data-toggle="tooltip"
+        data-placement="right" title="Tooltip On Right">
+            Right
+        </button>
+        <button type="button" class="btn btn-secondary" data-toggle="tooltip"
+        data-placement="left" title="Tooltip On Left">
+            Left
+        </button>
+        <button type="button" class="btn btn-secondary" data-toggle="tooltip"
+        data-placement="bottom" title="Tooltip On Bottom">
+            Bottom
+        </button>
+        <input type="text" class="form-control" name="" id="" data-toggle="tooltip"
+        data-placement="top" title="jsdnal">
+        <p>
+            <a id="matin" href="" data-toggle="tooltip"
+            data-placement="top" title="Tooltip On Bottom">Matin</a>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, quis reprehenderit. Non reiciendis similique error temporibus, repellendus beatae modi minima nisi ea? Hic nulla ipsa facilis vitae voluptas similique beatae!
+        </p>
+    </div>
+</body>
+<script src="../js/jquery-3.7.1.min.js"></script>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script>
+    $(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+        $("#matin").tooltip('toggle');
+    });
+</script>
+</html>
